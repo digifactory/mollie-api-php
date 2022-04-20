@@ -16,7 +16,6 @@ use Mollie\Api\MollieApiClient;
  * @property string $website
  * @property string $email
  * @property string $phone
- * @property int|null $categoryCode
  * @property string $status
  * @property \stdClass $review
  * @property \stdClass $_links

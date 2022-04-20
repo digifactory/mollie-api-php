@@ -31,7 +31,7 @@ class ProfileEndpointTest extends BaseEndpointTest
                     "website": "http://www.mywebsite.com",
                     "email": "info@mywebsite.com",
                     "phone": "31123456789",
-                    "categoryCode": 5399,
+                    "businessCategory": "MARKETPLACES",
                     "status": "verified",
                     "review": {
                         "status": "pending"
@@ -76,7 +76,7 @@ class ProfileEndpointTest extends BaseEndpointTest
         $this->assertEquals("http://www.mywebsite.com", $profile->website);
         $this->assertEquals("info@mywebsite.com", $profile->email);
         $this->assertEquals("31123456789", $profile->phone);
-        $this->assertEquals(5399, $profile->categoryCode);
+        $this->assertEquals("MARKETPLACES", $profile->businessCategory);
         $this->assertEquals(ProfileStatus::STATUS_VERIFIED, $profile->status);
         $this->assertEquals((object) ["status" => "pending"], $profile->review);
 
@@ -119,7 +119,7 @@ class ProfileEndpointTest extends BaseEndpointTest
                     "website": "http://www.mywebsite.com",
                     "email": "info@mywebsite.com",
                     "phone": "31123456789",
-                    "categoryCode": 5399,
+                    "businessCategory": "MARKETPLACES",
                     "status": "verified",
                     "review": {
                         "status": "pending"
@@ -183,7 +183,7 @@ class ProfileEndpointTest extends BaseEndpointTest
                     "website": "http://www.mywebsite.com",
                     "email": "info@mywebsite.com",
                     "phone": "31123456789",
-                    "categoryCode": 5399,
+                    "businessCategory": "MARKETPLACES",
                     "status": "verified",
                     "review": {
                         "status": "pending"
@@ -228,7 +228,7 @@ class ProfileEndpointTest extends BaseEndpointTest
         $this->assertEquals("http://www.mywebsite.com", $profile->website);
         $this->assertEquals("info@mywebsite.com", $profile->email);
         $this->assertEquals("31123456789", $profile->phone);
-        $this->assertEquals(5399, $profile->categoryCode);
+        $this->assertEquals("MARKETPLACES", $profile->businessCategory);
         $this->assertEquals(ProfileStatus::STATUS_VERIFIED, $profile->status);
         $this->assertEquals((object) ["status" => "pending"], $profile->review);
 
@@ -273,7 +273,7 @@ class ProfileEndpointTest extends BaseEndpointTest
                                 "website": "http://www.mywebsite.com",
                                 "email": "info@mywebsite.com",
                                 "phone": "31123456789",
-                                "categoryCode": 5399,
+                                "businessCategory": "MARKETPLACES",
                                 "status": "verified",
                                 "review": {
                                     "status": "pending"
@@ -314,7 +314,7 @@ class ProfileEndpointTest extends BaseEndpointTest
                                 "website": "http://www.mywebsite2.com",
                                 "email": "info@mywebsite2.com",
                                 "phone": "31123456789",
-                                "categoryCode": 5399,
+                                "businessCategory": "MARKETPLACES",
                                 "status": "verified",
                                 "review": {
                                     "status": "pending"
@@ -400,7 +400,7 @@ class ProfileEndpointTest extends BaseEndpointTest
                     "website": "http://www.mywebsite.com",
                     "email": "' . $expectedEmail . '",
                     "phone": "' . $expectedPhone . '",
-                    "categoryCode": 5399,
+                    "businessCategory": "MARKETPLACES",
                     "status": "verified",
                     "review": {
                         "status": "pending"
@@ -461,7 +461,7 @@ class ProfileEndpointTest extends BaseEndpointTest
             "website": "http://www.mywebsite.com",
             "email": "info@mywebsite.com",
             "phone": "31123456789",
-            "categoryCode": 5399,
+            "businessCategory": "MARKETPLACES",
             "status": "verified",
             "review": {
                 "status": "pending"

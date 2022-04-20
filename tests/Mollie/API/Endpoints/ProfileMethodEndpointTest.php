@@ -193,7 +193,7 @@ class ProfileMethodEndpointTest extends BaseEndpointTest
             "website": "http://www.mywebsite.com",
             "email": "info@mywebsite.com",
             "phone": "31123456789",
-            "categoryCode": 5399,
+            "businessCategory": "MARKETPLACES",
             "status": "verified",
             "review": {
                 "status": "pending"
